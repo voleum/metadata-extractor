@@ -36,6 +36,7 @@ import com.drew.imaging.psd.PsdMetadataReader;
 import com.drew.imaging.raf.RafMetadataReader;
 import com.drew.imaging.tiff.TiffMetadataReader;
 import com.drew.imaging.wav.WavMetadataReader;
+import com.drew.imaging.webm.WebMMetadataReader;
 import com.drew.imaging.webp.WebpMetadataReader;
 import com.drew.lang.RandomAccessStreamReader;
 import com.drew.lang.StringUtil;
@@ -181,6 +182,8 @@ public class ImageMetadataReader
                 return EpsMetadataReader.readMetadata(inputStream);
             case Heif:
                 return HeifMetadataReader.readMetadata(inputStream);
+            case WebM:
+                return WebMMetadataReader.readMetadata(inputStream);
             case Unknown:
                 throw new ImageProcessingException("File format could not be determined");
             default:

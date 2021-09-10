@@ -51,6 +51,7 @@ public class FileTypeDetector
 
         // https://en.wikipedia.org/wiki/List_of_file_signatures
 
+        _root.addPath(FileType.WebM, new byte[]{(byte)0x1a, (byte)0x45, (byte)0xdf, (byte)0xa3});
         _root.addPath(FileType.Jpeg, new byte[]{(byte)0xff, (byte)0xd8});
         _root.addPath(FileType.Tiff, "II".getBytes(), new byte[]{0x2a, 0x00});
         _root.addPath(FileType.Tiff, "MM".getBytes(), new byte[]{0x00, 0x2a});

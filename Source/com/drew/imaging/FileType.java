@@ -32,6 +32,7 @@ import com.drew.lang.annotations.Nullable;
 public enum FileType
 {
     Unknown("Unknown", "Unknown", null),
+    WebM("WebM", "WebM", "video/webm", "webm"),
     Jpeg("JPEG", "Joint Photographic Experts Group", "image/jpeg", "jpg", "jpeg", "jpe"),
     Tiff("TIFF", "Tagged Image File Format", "image/tiff", "tiff", "tif"),
     Psd("PSD", "Photoshop Document", "image/vnd.adobe.photoshop", "psd"),
